@@ -21,7 +21,10 @@ router.post('/', (req, res) => {
         name: req.body.name
     });
 
-    newItem.save().then(item => res.json(item))
+    newItem.save().then(item => { 
+        res.json(item)
+        console.log(`${newItem.name} successfully added`)
+    })
 })
 
 // @route   DELETE api/items/:id
