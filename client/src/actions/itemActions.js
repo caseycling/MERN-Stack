@@ -15,3 +15,12 @@ export const deleteItem = id => {
         payload: id
     };
 };
+
+//Add item action
+export const addItem = item => {
+    return {
+        type: ADD_ITEM,
+        //QUESTION: What is payload?
+        payload: item
+    };
+};
